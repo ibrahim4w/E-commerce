@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* تخصيص موضع الأسهم */
+.slick-prev, .slick-next {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 10px;
+    top: 350px;
+    background-color: rgba(209, 204, 204, 0.9);
+    border-radius: 40%;
+    z-index: 1;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+
+/* #homeSlider {
+    .slick-prev, .slick-next {
+    
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 10px;
+    top: 0;
+    bottom: ;
+    background-color: rgba(209, 204, 204, 0.9);
+    border-radius: 40%;
+    z-index: 1;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}
+.slick-prev {
+    left: 45%; 
+    margin-left: -20px;
+  }
+  
+.slick-next {
+    right: 45%; 
+  }
+  .slick-prev:hover, .slick-next:hover {
+    background-color: gray;
+  }
+} */
+
+.slick-prev {
+    left: 45%; /* تحديد موضع السهم الأيسر */
+  }
+  
+.slick-next {
+    right: 50%; /* تحديد موضع السهم الأيمن */
+  }
+  
+  /* إزالة النص الداخلي للأسهم */
+.slick-prev:before, .slick-next:before {
+    content: ''; /* إزالة الأيقونات الافتراضية للأسهم */
+  }
+  
+  /* تأثير hover لتغيير لون النقاط عند التمرير */
+.slick-prev:hover, .slick-next:hover {
+    background-color: gray; /* تغيير اللون عند التمرير */
+  }
+  
+  /* تخصيص الحاوية للشرائح */
