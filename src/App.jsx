@@ -1,7 +1,7 @@
 import { Toaster } from "react-hot-toast";
 import "./App.css";
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
@@ -25,7 +25,7 @@ import AllOrders from "./Components/AllOrders/AllOrders";
 function App() {
   const i = new QueryClient();
 
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
     {
       path: "/",
       element: <Layout />,
