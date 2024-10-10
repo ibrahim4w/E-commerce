@@ -21,6 +21,7 @@ import { CartContextProvider } from "./Context/CartContext";
 import WishListContextProvider from "./Context/WishListContext";
 import Payment from "./Components/Payment/Payment";
 import AllOrders from "./Components/AllOrders/AllOrders";
+import NotFound from "./Components/NotFoundPage/NotFound";
 
 function App() {
   const i = new QueryClient();
@@ -110,6 +111,14 @@ function App() {
           element: (
             <Protected>
               <Payment />
+            </Protected>
+          ),
+        },
+        {
+          path: "*",
+          element: (
+            <Protected>
+              <NotFound />
             </Protected>
           ),
         },

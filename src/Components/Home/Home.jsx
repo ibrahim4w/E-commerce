@@ -37,6 +37,7 @@ function Home() {
     queryFn: getAllProduct,
   });
 
+
   // Handle Error
   if (error) {
     return toast.error(`Error: ${error.message || "Something went wrong!"}`);
